@@ -1,0 +1,13 @@
+extends ../layout/index
+include ../components/intro
+include ../components/gallery
+
+block constants
+  - const title = "Главная"
+
+block page
+  button(data-gallery="gallery-1").js-gallery-button открыть
+  +intro()
+  +gallery()
+
+
