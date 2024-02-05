@@ -9,8 +9,6 @@ export default function initFancyGallery() {
   const buttons = document.querySelectorAll(".js-gallery-button")
   const galleries = document.querySelectorAll(".js-content-gallery")
   
-  console.log(buttons)
-  
   function enableGallerySliders(gallery) {
     gallery.classList.add('--is-active')
     
@@ -42,8 +40,6 @@ export default function initFancyGallery() {
       galleries.forEach((gallery) => {
         const galleryController = gallery.querySelector(".js-gallery-controller")
         const galleryAttr = gallery.dataset.gallery
-        
-        console.log(galleryAttr === buttonAttr, galleryAttr, buttonAttr )
         
         if(galleryAttr === buttonAttr) {
           const galleryInstance = enableGallerySliders(gallery)
