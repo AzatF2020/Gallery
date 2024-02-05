@@ -1,7 +1,3 @@
-@mixin card-style($width, $box, $medium-size-width) {
-
-}
-
 .intro {
   &__content {
     width: 100%;
@@ -45,6 +41,25 @@
       "box4 box4 box5 box5 box6 box6"
       "box7 box7 box7 box7 box7 box7"
       "box8 box8 box8 box8 box8 box8"
+  }
+
+  &__button {
+    img {
+      transition: .3s ease filter;
+    }
+  }
+  &__button:hover {
+    img {
+      filter: drop-shadow(0 0 2rem #ffca67);
+    }
+  }
+
+  picture {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__card:nth-child(1) {

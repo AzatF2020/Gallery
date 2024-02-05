@@ -1,9 +1,11 @@
 import Swiper from "swiper";
-import {EffectFade, Controller} from "swiper/modules";
+import {EffectFade, Controller, Scrollbar, FreeMode} from "swiper/modules";
 import "swiper/css"
 import "swiper/css/effect-fade"
+import "swiper/css/scrollbar"
+import "swiper/css/free-mode"
 
-Swiper.use([EffectFade, Controller])
+Swiper.use([EffectFade, Controller, Scrollbar, FreeMode])
 
 export default function initFancyGallery() {
   const buttons = document.querySelectorAll(".js-gallery-button")
@@ -19,8 +21,8 @@ export default function initFancyGallery() {
     })
   }
   
-  function initController(galleryInstance, galleryController) {
-    const controllersButtons =  [...galleryController.children]
+  function initController(gallery, galleryInstance) {
+    const controllersButtons =  gallery.querySelectorAll(".js-gallery-nav")
     
     controllersButtons.forEach((controllerButton, buttonIndex) => {
       controllerButton.addEventListener("click", (event) => {
@@ -32,18 +34,37 @@ export default function initFancyGallery() {
     })
   }
   
+  function initScroll(controller) {
+    new Swiper(controller, {
+      direction: "vertical",
+      slidesPerView: "auto",
+      freeMode: true,
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+      mousewheel: true,
+    })
+  }
+  
   buttons.forEach((button) => {
     const buttonAttr = button.dataset.gallery
     button.addEventListener("click", () => {
-      console.log(button)
 
       galleries.forEach((gallery) => {
-        const galleryController = gallery.querySelector(".js-gallery-controller")
         const galleryAttr = gallery.dataset.gallery
         
         if(galleryAttr === buttonAttr) {
+       
+          const galleryController = gallery.querySelector(".js-gallery-controller")
+          const buttonClose = gallery.querySelector(".js-close-gallery")
+          
           const galleryInstance = enableGallerySliders(gallery)
-          initController(galleryInstance, galleryController)
+          initScroll(galleryController)
+          initController(gallery, galleryInstance)
+          
+          buttonClose.addEventListener("click", () => {
+            gallery.classList.remove('--is-active')
+          })
         }
       })
     })

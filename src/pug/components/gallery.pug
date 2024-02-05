@@ -1,61 +1,21 @@
-mixin gallery()
+mixin gallery(data)
   .gallery
-    .gallery__content.js-content-gallery(data-gallery="gallery-1")
-      .swiper-wrapper
-        .swiper-slide
-          .gallery__slide
-            img(src="assets/img/Казань_обманки_page-0005.jpg"
-                alt="image")
-        .swiper-slide
-          .gallery__slide
-            img(src="assets/img/Казань_обманки_page-0006.jpg"
-              alt="image")
-        .swiper-slide
-          .gallery__slide
-            img(src="assets/img/Казань_обманки_page-0005.jpg"
-              alt="image")
-        .swiper-slide
-          .gallery__slide
-            img(src="assets/img/Казань_обманки_page-0006.jpg"
-              alt="image")
-        .swiper-slide
-          .gallery__slide
-            img(src="assets/img/Казань_обманки_page-0005.jpg"
-              alt="image")
-        .swiper-slide
-          .gallery__slide
-            img(src="assets/img/Казань_обманки_page-0006.jpg"
-              alt="image")
-        .swiper-slide
-          .gallery__slide
-            img(src="assets/img/Казань_обманки_page-0005.jpg"
-              alt="image")
-        .swiper-slide
-          .gallery__slide
-            img(src="assets/img/Казань_обманки_page-0006.jpg"
-              alt="image")
-      .gallery__content-navigation.js-gallery-controller
-        button.gallery__navigation
-          img(src="assets/img/Казань_обманки_page-0005.jpg"
-            alt="image")
-        button.gallery__navigation
-          img(src="assets/img/Казань_обманки_page-0006.jpg"
-            alt="image")
-        button.gallery__navigation
-          img(src="assets/img/Казань_обманки_page-0005.jpg"
-            alt="image")
-        button.gallery__navigation
-          img(src="assets/img/Казань_обманки_page-0006.jpg"
-            alt="image")
-        button.gallery__navigation
-          img(src="assets/img/Казань_обманки_page-0005.jpg"
-            alt="image")
-        button.gallery__navigation
-          img(src="assets/img/Казань_обманки_page-0006.jpg"
-            alt="image")
-        button.gallery__navigation
-          img(src="assets/img/Казань_обманки_page-0005.jpg"
-            alt="image")
-        button.gallery__navigation
-          img(src="assets/img/Казань_обманки_page-0006.jpg"
-            alt="image")
+    each gallery in data.gallery
+      .gallery__content.js-content-gallery(data-gallery=gallery.attr)
+        button.gallery__content-button-close.js-close-gallery
+          include ../../assets/icons/close-icon.svg
+        .swiper-wrapper
+          each image in gallery.images
+            .swiper-slide
+              .gallery__slide
+                img(src=image alt="image main" loading="lazy")
+                .swiper-lazy-preloader.swiper-lazy-preloader-white
+
+        .gallery__content-navigation-wrapper
+          .gallery__content-navigation.js-gallery-controller
+            .swiper-wrapper
+              .swiper-slide
+                each image, key in gallery.images
+                  button.gallery__navigation.js-gallery-nav(class=(key == 0 ? "--is-active" : ""))
+                    img.lazyloading.lazyload.lazyloaded(src=image alt="image")
+            .swiper-scrollbar

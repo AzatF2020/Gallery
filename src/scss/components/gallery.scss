@@ -1,4 +1,22 @@
 .gallery {
+  &__content-button-close {
+    position: absolute;
+    top: 1rem;
+    left: 4rem;
+    z-index: 10;
+
+    svg {
+      width: 4rem;
+      height: 4rem;
+      max-width: 100%;
+      transition: .3s ease opacity;
+
+      &:hover {
+        opacity: .65;
+      }
+    }
+  }
+
   &__content {
     width: 100%;
     height: 100vh;
@@ -10,8 +28,7 @@
     background-color: rgba(0, 0, 0, 1);
     opacity: 0;
     z-index: -1;
-
-    transition: .3s opacity ease, .3s visibility ease;
+    transition: .3s opacity ease, .3s visibility ease, .3s z-index ease;
 
     &.--is-active {
       z-index: 100;
@@ -23,46 +40,43 @@
   &__slide {
     margin-right: 30rem;
     padding: 4rem;
+    margin-top: 2rem;
 
     img {
-      width: 100%;
-      height: 100vh;
-      object-fit: cover;
+      width: fit-content;
+      height: 92vh;
+      object-fit: contain;
     }
   }
 
   &__content-navigation {
     background-color: black;
-    padding: 2rem;
     position: absolute;
-    top: 2rem;
+    top: 0;
     right: 2rem;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    row-gap: 2rem;
     z-index: 5;
-    overflow-y: auto;
+    width: fit-content;
+    height: 92vh;
+    margin-top: 6rem;
+    overflow: hidden;
 
-    &::-webkit-scrollbar {
-      width: .75rem;
-      border-radius: 5px;
+    .swiper-wrapper {
+      height: fit-content;
     }
-    &::-webkit-scrollbar-track {
-      background: #000000;
-    }
-    &::-webkit-scrollbar-thumb {
-      background: #a8a7a7;
-    }
-    &::-webkit-scrollbar-thumb:hover {
-      background: #555;
+
+    .swiper-slide {
+      display: flex;
+      flex-direction: column !important;
+      row-gap: 2rem;
+      padding-right: 2rem;
     }
   }
 
   &__navigation {
-    width: 100%;
-    height: 100%;
-    transition: .3s ease transform;
+    width: fit-content !important;
+    height: fit-content !important;
+    transition: .3s ease opacity;
+    opacity: .45;
 
     img {
       width: auto;
@@ -71,7 +85,18 @@
     }
 
     &.--is-active {
-      transform: scale(1.1);
+      opacity: 1;
     }
+  }
+
+  .swiper-scrollbar-vertical {
+  }
+
+  .swiper-scrollbar-drag {
+    background-color: #dedede;
+  }
+
+  .swiper-scrollbar {
+    background-color: rgba(255, 255, 255, 0.18);
   }
 }
