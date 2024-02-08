@@ -25,7 +25,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: #332303;
     opacity: 0;
     z-index: -1;
     transition: .3s opacity ease, .3s visibility ease, .3s z-index ease;
@@ -38,7 +38,6 @@
   }
 
   &__slide {
-    margin-right: 30rem;
     padding: 4rem;
     margin-top: 2rem;
 
@@ -50,7 +49,6 @@
   }
 
   &__content-navigation {
-    background-color: black;
     position: absolute;
     top: 0;
     right: 2rem;
@@ -73,23 +71,27 @@
   }
 
   &__navigation {
-    width: fit-content !important;
-    height: fit-content !important;
-    transition: .3s ease opacity;
+    width: 30rem;
+    height: 20rem;
+    transition: .3s opacity ease, .3s background-color ease;
     opacity: .45;
 
     img {
       width: auto;
       height: 15rem;
       object-fit: cover;
+      transform: scale(1.1);
+      transition: .3s ease transform;
     }
 
     &.--is-active {
       opacity: 1;
+      background-color: #D8B46A;
     }
-  }
 
-  .swiper-scrollbar-vertical {
+    &.--is-active img {
+      transform: scale(1);
+    }
   }
 
   .swiper-scrollbar-drag {

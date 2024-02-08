@@ -8,7 +8,7 @@ mixin gallery(data)
           each image in gallery.images
             .swiper-slide
               .gallery__slide
-                img(src=image alt="image main" loading="lazy")
+                img(src=image alt="image main" loading="lazy").js-main-image.active
                 .swiper-lazy-preloader.swiper-lazy-preloader-white
 
         .gallery__content-navigation-wrapper

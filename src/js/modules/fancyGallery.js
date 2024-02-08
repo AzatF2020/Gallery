@@ -4,6 +4,7 @@ import "swiper/css"
 import "swiper/css/effect-fade"
 import "swiper/css/scrollbar"
 import "swiper/css/free-mode"
+import "../vendor/blowup"
 
 Swiper.use([EffectFade, Controller, Scrollbar, FreeMode])
 
@@ -18,18 +19,29 @@ export default function initFancyGallery() {
       effect: 'fade',
       fadeEffect: true,
       watchActiveIndex: true,
+      allowTouchMove: false
     })
   }
+
+  function enableMugnify(image) {
+    console.log(image)
+      $(function(){
+        $(image).blowup({});
+      })
+  }
   
-  function initController(gallery, galleryInstance) {
-    const controllersButtons =  gallery.querySelectorAll(".js-gallery-nav")
-    
+  function initController(galleryInstance, controllersButtons) {
     controllersButtons.forEach((controllerButton, buttonIndex) => {
       controllerButton.addEventListener("click", (event) => {
         controllersButtons.forEach((button) =>  button.classList.remove("--is-active"))
         
         controllerButton.classList.add("--is-active")
         galleryInstance.slideTo(buttonIndex)
+
+
+        const mainImage = galleryInstance.slides[galleryInstance.activeIndex].querySelector(".js-main-image")
+
+        enableMugnify(mainImage)
       })
     })
   }
@@ -52,6 +64,7 @@ export default function initFancyGallery() {
 
       galleries.forEach((gallery) => {
         const galleryAttr = gallery.dataset.gallery
+        const controllersButtons =  gallery.querySelectorAll(".js-gallery-nav")
         
         if(galleryAttr === buttonAttr) {
        
@@ -60,10 +73,13 @@ export default function initFancyGallery() {
           
           const galleryInstance = enableGallerySliders(gallery)
           initScroll(galleryController)
-          initController(gallery, galleryInstance)
+          initController(galleryInstance, controllersButtons)
           
           buttonClose.addEventListener("click", () => {
             gallery.classList.remove('--is-active')
+
+            controllersButtons.forEach((button) =>  button.classList.remove("--is-active"))
+            controllersButtons[0].classList.add("--is-active")
           })
         }
       })
