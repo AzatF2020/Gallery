@@ -3,58 +3,109 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/main.min.css">
     <title>Главная</title>
   </head>
   <body>
     <div class="page-content">
+
       <main class="page-main">
         <div class="intro">
           <div class="intro__content">
             <div class="intro__overlay"></div>
             <div class="intro__cards">
               <div class="intro__card">
-                <button class="intro__button js-gallery-button" data-gallery="gallery-7"><img class="intro__image-board" alt="board" src="assets/img/board-1.png"/></button>
+                <button class="intro__button js-gallery-button" data-gallery="gallery-7">
+                  <picture>
+                    <source srcset="assets/img/board-1.webp" type="image/webp">
+                    <img class="intro__image-board" alt="board" src="assets/img/board-1.png">
+                  </picture>
+                </button>
               </div>
               <div class="intro__card">
-                <button class="intro__button js-gallery-button" data-gallery="gallery-1"><img class="intro__image-board" alt="board" src="assets/img/board-2.png"/></button>
+                <button class="intro__button js-gallery-button" data-gallery="gallery-1">
+                  <picture>
+                    <source srcset="assets/img/board-2.webp" type="image/webp">
+                    <img class="intro__image-board" alt="board" src="assets/img/board-2.png">
+                  </picture>
+                </button>
               </div>
               <div class="intro__card">
-                <button class="intro__button js-gallery-button" data-gallery="gallery-2"><img class="intro__image-board" alt="board" src="assets/img/board-3.png"/></button>
+                <button class="intro__button js-gallery-button" data-gallery="gallery-2">
+                  <picture>
+                    <source srcset="assets/img/board-3.webp" type="image/webp">
+                    <img class="intro__image-board" alt="board" src="assets/img/board-3.png">
+                  </picture>
+                </button>
               </div>
               <div class="intro__card">
-                <button class="intro__button js-gallery-button" data-gallery="gallery-5"><img class="intro__image-board" alt="board" src="assets/img/board-4.png"/></button>
+                <button class="intro__button js-gallery-button" data-gallery="gallery-5">
+                  <picture>
+                    <source srcset="assets/img/board-4.webp" type="image/webp">
+                    <img class="intro__image-board" alt="board" src="assets/img/board-4.png">
+                  </picture>
+                </button>
               </div>
               <div class="intro__card">
-                <button class="intro__button js-gallery-button" data-gallery="gallery-8"><img class="intro__image-board" alt="board" src="assets/img/board-5.png"/></button>
+                <button class="intro__button js-gallery-button" data-gallery="gallery-8">
+                  <picture>
+                    <source srcset="assets/img/board-5.webp" type="image/webp">
+                    <img class="intro__image-board" alt="board" src="assets/img/board-5.png">
+                  </picture>
+                </button>
               </div>
               <div class="intro__card">
-                <button class="intro__button js-gallery-button" data-gallery="gallery-4"><img class="intro__image-board" alt="board" src="assets/img/board-6.png"/></button>
+                <button class="intro__button js-gallery-button" data-gallery="gallery-4">
+                  <picture>
+                    <source srcset="assets/img/board-6.webp" type="image/webp">
+                    <img class="intro__image-board" alt="board" src="assets/img/board-6.png">
+                  </picture>
+                </button>
               </div>
               <div class="intro__card">
-                <button class="intro__button js-gallery-button" data-gallery="gallery-3"><img class="intro__image-board" alt="board" src="assets/img/board-7.png"/></button>
+                <button class="intro__button js-gallery-button" data-gallery="gallery-3">
+                  <picture>
+                    <source srcset="assets/img/board-7.webp" type="image/webp">
+                    <img class="intro__image-board" alt="board" src="assets/img/board-7.png">
+                  </picture>
+                </button>
               </div>
               <div class="intro__card">
-                <button class="intro__button js-gallery-button" data-gallery="gallery-6"><img class="intro__image-board" alt="board" src="assets/img/board-8.png"/></button>
+                <button class="intro__button js-gallery-button" data-gallery="gallery-6">
+                  <picture>
+                    <source srcset="assets/img/board-8.webp" type="image/webp">
+                    <img class="intro__image-board" alt="board" src="assets/img/board-8.png">
+                  </picture>
+                </button>
               </div>
             </div>
           </div>
         </div>
         <div class="gallery">
           <div class="gallery__content js-content-gallery" data-gallery="gallery-1">
-            <button class="gallery__content-button-close js-close-gallery"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-  <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" fill="white"/>
-</svg>
+            <button class="gallery__content-button-close js-close-gallery">
+              <picture>
+                <source srcset="/assets/icons/back.webp" type="image/webp">
+                <img src="/assets/icons/back.png">
+              </picture>
             </button>
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0006.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0006.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0006.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0006.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0007.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0007.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0007.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0007.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
@@ -63,8 +114,18 @@
               <div class="gallery__content-navigation js-gallery-controller">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <button class="gallery__navigation js-gallery-nav --is-active"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0006.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0007.jpg" alt="image"/></button>
+                    <button class="gallery__navigation js-gallery-nav --is-active">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0006.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0006.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0007.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0007.jpg" alt="image">
+                      </picture>
+                    </button>
                   </div>
                 </div>
                 <div class="swiper-scrollbar"></div>
@@ -72,23 +133,37 @@
             </div>
           </div>
           <div class="gallery__content js-content-gallery" data-gallery="gallery-2">
-            <button class="gallery__content-button-close js-close-gallery"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-  <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" fill="white"/>
-</svg>
+            <button class="gallery__content-button-close js-close-gallery">
+              <picture>
+                <source srcset="/assets/icons/back.webp" type="image/webp">
+                <img src="/assets/icons/back.png">
+              </picture>
             </button>
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0008.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0008.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0008.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0008.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0009.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0009.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0009.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0009.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0010.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0010.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0010.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0010.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
@@ -97,9 +172,24 @@
               <div class="gallery__content-navigation js-gallery-controller">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <button class="gallery__navigation js-gallery-nav --is-active"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0008.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0009.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0010.jpg" alt="image"/></button>
+                    <button class="gallery__navigation js-gallery-nav --is-active">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0008.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0008.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0009.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0009.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0010.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0010.jpg" alt="image">
+                      </picture>
+                    </button>
                   </div>
                 </div>
                 <div class="swiper-scrollbar"></div>
@@ -107,183 +197,325 @@
             </div>
           </div>
           <div class="gallery__content js-content-gallery" data-gallery="gallery-3">
-            <button class="gallery__content-button-close js-close-gallery"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-  <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" fill="white"/>
-</svg>
+            <button class="gallery__content-button-close js-close-gallery">
+              <picture>
+                <source srcset="/assets/icons/back.webp" type="image/webp">
+                <img src="/assets/icons/back.png">
+              </picture>
             </button>
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0011.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0011.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0011.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0011.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0012.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0012.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0012.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0012.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0013.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0013.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0013.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0013.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0014.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0014.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0014.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0014.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0015.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0015.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0015.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0015.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0016.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0016.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0016.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0016.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0017.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0017.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0017.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0017.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0018.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0018.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0018.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0018.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0019.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0019.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0019.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0019.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0020.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0020.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0020.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0020.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0021.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0021.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0021.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0021.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0022.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0022.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0022.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0022.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0023.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0023.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0023.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0023.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0024.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0024.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0024.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0024.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0025.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0025.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0025.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0025.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0026.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0026.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0026.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0026.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0027.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0027.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0027.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0027.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0028.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0028.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0028.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0028.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0029.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0029.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0029.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0029.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0030.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0030.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0030.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0030.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0031.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0031.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0031.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0031.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0032.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0032.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0032.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0032.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0033.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0033.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0033.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0033.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0034.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0034.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0034.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0034.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0035.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0035.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0035.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0035.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0036.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0036.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0036.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0036.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0037.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0037.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0037.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0037.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0038.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0038.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0038.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0038.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0039.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0039.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0039.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0039.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0040.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0040.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0040.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0040.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0041.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0041.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0041.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0041.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0042.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0042.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0042.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0042.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0043.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0043.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0043.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0043.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0044.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0044.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0044.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0044.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0045.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0045.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0045.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0045.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
@@ -292,41 +524,216 @@
               <div class="gallery__content-navigation js-gallery-controller">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <button class="gallery__navigation js-gallery-nav --is-active"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0011.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0012.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0013.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0014.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0015.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0016.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0017.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0018.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0019.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0020.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0021.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0022.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0023.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0024.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0025.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0026.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0027.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0028.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0029.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0030.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0031.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0032.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0033.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0034.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0035.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0036.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0037.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0038.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0039.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0040.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0041.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0042.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0043.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0044.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0045.jpg" alt="image"/></button>
+                    <button class="gallery__navigation js-gallery-nav --is-active">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0011.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0011.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0012.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0012.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0013.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0013.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0014.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0014.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0015.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0015.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0016.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0016.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0017.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0017.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0018.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0018.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0019.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0019.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0020.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0020.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0021.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0021.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0022.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0022.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0023.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0023.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0024.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0024.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0025.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0025.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0026.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0026.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0027.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0027.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0028.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0028.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0029.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0029.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0030.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0030.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0031.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0031.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0032.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0032.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0033.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0033.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0034.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0034.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0035.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0035.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0036.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0036.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0037.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0037.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0038.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0038.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0039.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0039.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0040.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0040.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0041.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0041.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0042.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0042.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0043.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0043.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0044.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0044.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0045.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0045.jpg" alt="image">
+                      </picture>
+                    </button>
                   </div>
                 </div>
                 <div class="swiper-scrollbar"></div>
@@ -334,93 +741,163 @@
             </div>
           </div>
           <div class="gallery__content js-content-gallery" data-gallery="gallery-4">
-            <button class="gallery__content-button-close js-close-gallery"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-  <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" fill="white"/>
-</svg>
+            <button class="gallery__content-button-close js-close-gallery">
+              <picture>
+                <source srcset="/assets/icons/back.webp" type="image/webp">
+                <img src="/assets/icons/back.png">
+              </picture>
             </button>
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0046.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0046.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0046.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0046.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0047.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0047.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0047.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0047.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0048.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0048.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0048.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0048.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0049.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0049.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0049.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0049.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0050.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0050.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0050.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0050.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0051.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0051.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0051.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0051.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0052.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0052.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0052.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0052.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0053.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0053.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0053.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0053.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0054.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0054.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0054.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0054.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0055.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0055.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0055.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0055.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0056.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0056.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0056.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0056.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0057.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0057.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0057.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0057.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0058.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0058.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0058.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0058.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0059.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0059.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0059.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0059.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0060.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0060.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0060.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0060.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0061.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0061.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0061.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0061.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0062.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0062.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0062.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0062.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
@@ -429,23 +906,108 @@
               <div class="gallery__content-navigation js-gallery-controller">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <button class="gallery__navigation js-gallery-nav --is-active"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0046.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0047.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0048.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0049.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0050.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0051.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0052.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0053.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0054.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0055.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0056.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0057.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0058.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0059.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0060.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0061.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0062.jpg" alt="image"/></button>
+                    <button class="gallery__navigation js-gallery-nav --is-active">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0046.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0046.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0047.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0047.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0048.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0048.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0049.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0049.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0050.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0050.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0051.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0051.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0052.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0052.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0053.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0053.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0054.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0054.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0055.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0055.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0056.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0056.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0057.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0057.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0058.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0058.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0059.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0059.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0060.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0060.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0061.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0061.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0062.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0062.jpg" alt="image">
+                      </picture>
+                    </button>
                   </div>
                 </div>
                 <div class="swiper-scrollbar"></div>
@@ -453,98 +1015,172 @@
             </div>
           </div>
           <div class="gallery__content js-content-gallery" data-gallery="gallery-5">
-            <button class="gallery__content-button-close js-close-gallery"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-  <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" fill="white"/>
-</svg>
+            <button class="gallery__content-button-close js-close-gallery">
+              <picture>
+                <source srcset="/assets/icons/back.webp" type="image/webp">
+                <img src="/assets/icons/back.png">
+              </picture>
             </button>
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0073.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0073.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0073.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0073.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0074.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0074.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0074.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0074.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0075.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0075.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0075.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0075.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0076.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0076.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0076.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0076.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0077.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0077.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0077.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0077.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0078.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0078.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0078.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0078.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0079.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0079.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0079.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0079.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0080.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0080.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0080.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0080.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0081.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0081.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0081.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0081.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0082.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0082.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0082.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0082.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0083.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0083.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0083.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0083.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0084.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0084.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0084.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0084.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0085.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0085.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0085.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0085.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0086.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0086.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0086.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0086.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0087.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0087.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0087.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0087.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0088.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0088.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0088.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0088.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0089.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0089.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0089.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0089.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0090.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0090.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0090.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0090.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
@@ -553,24 +1189,114 @@
               <div class="gallery__content-navigation js-gallery-controller">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <button class="gallery__navigation js-gallery-nav --is-active"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0073.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0074.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0075.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0076.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0077.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0078.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0079.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0080.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0081.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0082.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0083.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0084.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0085.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0086.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0087.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0088.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0089.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0090.jpg" alt="image"/></button>
+                    <button class="gallery__navigation js-gallery-nav --is-active">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0073.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0073.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0074.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0074.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0075.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0075.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0076.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0076.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0077.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0077.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0078.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0078.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0079.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0079.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0080.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0080.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0081.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0081.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0082.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0082.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0083.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0083.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0084.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0084.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0085.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0085.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0086.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0086.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0087.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0087.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0088.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0088.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0089.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0089.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0090.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0090.jpg" alt="image">
+                      </picture>
+                    </button>
                   </div>
                 </div>
                 <div class="swiper-scrollbar"></div>
@@ -578,98 +1304,172 @@
             </div>
           </div>
           <div class="gallery__content js-content-gallery" data-gallery="gallery-6">
-            <button class="gallery__content-button-close js-close-gallery"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-  <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" fill="white"/>
-</svg>
+            <button class="gallery__content-button-close js-close-gallery">
+              <picture>
+                <source srcset="/assets/icons/back.webp" type="image/webp">
+                <img src="/assets/icons/back.png">
+              </picture>
             </button>
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0091.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0091.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0091.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0091.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0092.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0092.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0092.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0092.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0093.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0093.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0093.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0093.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0094.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0094.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0094.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0094.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0095.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0095.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0095.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0095.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0096.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0096.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0096.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0096.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0097.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0097.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0097.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0097.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0098.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0098.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0098.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0098.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0099.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0099.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0099.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0099.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0100.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0100.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0100.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0100.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0101.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0101.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0101.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0101.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0102.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0102.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0102.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0102.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0103.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0103.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0103.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0103.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0104.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0104.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0104.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0104.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0105.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0105.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0105.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0105.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0106.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0106.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0106.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0106.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0107.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0107.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0107.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0107.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0108.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0108.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0108.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0108.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
@@ -678,24 +1478,114 @@
               <div class="gallery__content-navigation js-gallery-controller">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <button class="gallery__navigation js-gallery-nav --is-active"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0091.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0092.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0093.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0094.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0095.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0096.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0097.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0098.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0099.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0100.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0101.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0102.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0103.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0104.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0105.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0106.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0107.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0108.jpg" alt="image"/></button>
+                    <button class="gallery__navigation js-gallery-nav --is-active">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0091.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0091.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0092.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0092.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0093.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0093.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0094.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0094.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0095.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0095.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0096.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0096.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0097.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0097.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0098.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0098.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0099.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0099.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0100.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0100.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0101.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0101.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0102.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0102.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0103.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0103.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0104.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0104.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0105.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0105.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0106.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0106.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0107.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0107.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0108.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0108.jpg" alt="image">
+                      </picture>
+                    </button>
                   </div>
                 </div>
                 <div class="swiper-scrollbar"></div>
@@ -703,53 +1593,91 @@
             </div>
           </div>
           <div class="gallery__content js-content-gallery" data-gallery="gallery-7">
-            <button class="gallery__content-button-close js-close-gallery"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-  <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" fill="white"/>
-</svg>
+            <button class="gallery__content-button-close js-close-gallery">
+              <picture>
+                <source srcset="/assets/icons/back.webp" type="image/webp">
+                <img src="/assets/icons/back.png">
+              </picture>
             </button>
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0109.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0109.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0109.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0109.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0110.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0110.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0110.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0110.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0111.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0111.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0111.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0111.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0112.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0112.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0112.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0112.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0113.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0113.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0113.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0113.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0114.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0114.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0114.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0114.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0115.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0115.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0115.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0115.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0116.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0116.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0116.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0116.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0117.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0117.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0117.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0117.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
@@ -758,15 +1686,60 @@
               <div class="gallery__content-navigation js-gallery-controller">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <button class="gallery__navigation js-gallery-nav --is-active"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0109.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0110.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0111.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0112.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0113.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0114.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0115.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0116.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0117.jpg" alt="image"/></button>
+                    <button class="gallery__navigation js-gallery-nav --is-active">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0109.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0109.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0110.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0110.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0111.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0111.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0112.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0112.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0113.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0113.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0114.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0114.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0115.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0115.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0116.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0116.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0117.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0117.jpg" alt="image">
+                      </picture>
+                    </button>
                   </div>
                 </div>
                 <div class="swiper-scrollbar"></div>
@@ -774,58 +1747,100 @@
             </div>
           </div>
           <div class="gallery__content js-content-gallery" data-gallery="gallery-8">
-            <button class="gallery__content-button-close js-close-gallery"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-  <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" fill="white"/>
-</svg>
+            <button class="gallery__content-button-close js-close-gallery">
+              <picture>
+                <source srcset="/assets/icons/back.webp" type="image/webp">
+                <img src="/assets/icons/back.png">
+              </picture>
             </button>
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0063.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0063.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0063.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0063.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0064.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0064.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0064.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0064.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0065.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0065.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0065.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0065.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0066.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0066.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0066.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0066.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0067.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0067.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0067.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0067.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0068.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0068.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0068.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0068.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0069.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0069.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0069.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0069.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0070.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0070.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0070.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0070.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0071.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0071.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0071.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0071.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gallery__slide"><img class="js-main-image active" src="assets/img/Казань_обманки_page-0072.jpg" alt="image main" loading="lazy"/>
+                <div class="gallery__slide magnify">
+                  <picture>
+                    <source srcset="assets/img/Казань_обманки_page-0072.webp" type="image/webp">
+                    <img class="js-main-image zoom" src="assets/img/Казань_обманки_page-0072.jpg" alt="image main" loading="lazy" data-magnify-src="assets/img/Казань_обманки_page-0072.jpg">
+                  </picture>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               </div>
@@ -834,16 +1849,66 @@
               <div class="gallery__content-navigation js-gallery-controller">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <button class="gallery__navigation js-gallery-nav --is-active"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0063.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0064.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0065.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0066.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0067.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0068.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0069.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0070.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0071.jpg" alt="image"/></button>
-                    <button class="gallery__navigation js-gallery-nav"><img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0072.jpg" alt="image"/></button>
+                    <button class="gallery__navigation js-gallery-nav --is-active">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0063.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0063.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0064.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0064.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0065.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0065.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0066.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0066.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0067.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0067.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0068.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0068.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0069.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0069.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0070.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0070.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0071.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0071.jpg" alt="image">
+                      </picture>
+                    </button>
+                    <button class="gallery__navigation js-gallery-nav">
+                      <picture>
+                        <source srcset="assets/img/Казань_обманки_page-0072.webp" type="image/webp">
+                        <img class="lazyloading lazyload lazyloaded" src="assets/img/Казань_обманки_page-0072.jpg" alt="image">
+                      </picture>
+                    </button>
                   </div>
                 </div>
                 <div class="swiper-scrollbar"></div>
@@ -853,7 +1918,7 @@
         </div>
       </main>
     </div>
+
   </body>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script type="module" src="js/main.js"></script>
 </html>

@@ -1,10 +1,5 @@
 import Swiper from "swiper";
 import {EffectFade, Controller, Scrollbar, FreeMode} from "swiper/modules";
-import "swiper/css"
-import "swiper/css/effect-fade"
-import "swiper/css/scrollbar"
-import "swiper/css/free-mode"
-import "../vendor/blowup"
 
 Swiper.use([EffectFade, Controller, Scrollbar, FreeMode])
 
@@ -22,13 +17,6 @@ export default function initFancyGallery() {
       allowTouchMove: false
     })
   }
-
-  function enableMugnify(image) {
-    console.log(image)
-      $(function(){
-        $(image).blowup({});
-      })
-  }
   
   function initController(galleryInstance, controllersButtons) {
     controllersButtons.forEach((controllerButton, buttonIndex) => {
@@ -37,11 +25,6 @@ export default function initFancyGallery() {
         
         controllerButton.classList.add("--is-active")
         galleryInstance.slideTo(buttonIndex)
-
-
-        const mainImage = galleryInstance.slides[galleryInstance.activeIndex].querySelector(".js-main-image")
-
-        enableMugnify(mainImage)
       })
     })
   }
@@ -51,10 +34,10 @@ export default function initFancyGallery() {
       direction: "vertical",
       slidesPerView: "auto",
       freeMode: true,
+      mousewheel: true,
       scrollbar: {
         el: ".swiper-scrollbar",
       },
-      mousewheel: true,
     })
   }
   

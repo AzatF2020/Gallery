@@ -97,7 +97,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 5rem;
+
+      @include breakpoint(large-desktop) {
+        margin-bottom: 5rem;
+      }
 
       img {
         width: 33.3rem;
@@ -120,7 +123,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 5rem;
+
+      @include breakpoint(large-desktop) {
+        margin-bottom: 5rem;
+      }
 
       img {
         width: 33.3rem;
@@ -209,7 +215,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 5rem;
+       @include breakpoint(large-desktop) {
+        margin-bottom: 5rem;
+      }
 
       img {
         width: 61.3rem;
@@ -232,7 +240,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 1rem;
+      @include breakpoint(large-desktop) {
+        margin-bottom: rem;
+      }
 
       img {
         width: 53.7rem;

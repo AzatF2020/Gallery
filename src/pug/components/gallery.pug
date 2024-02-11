@@ -3,12 +3,12 @@ mixin gallery(data)
     each gallery in data.gallery
       .gallery__content.js-content-gallery(data-gallery=gallery.attr)
         button.gallery__content-button-close.js-close-gallery
-          include ../../assets/icons/close-icon.svg
+          img(src='/assets/icons/back.png') 
         .swiper-wrapper
           each image in gallery.images
             .swiper-slide
-              .gallery__slide
-                img(src=image alt="image main" loading="lazy").js-main-image.active
+              .gallery__slide.magnify
+                img(src=image alt="image main" loading="lazy" data-magnify-src=image).js-main-image.zoom
                 .swiper-lazy-preloader.swiper-lazy-preloader-white
 
         .gallery__content-navigation-wrapper
